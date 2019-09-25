@@ -6,13 +6,13 @@ const Nav = () => {
     return (
         <nav className={s.nav}>
             <div>
-                <NavLink to='/Profile' activeClassName={s.active}>Profile</NavLink>
+                <NavLink to='/profile' activeClassName={s.active}>Profile</NavLink>
             </div>
             <div>
-                <NavLink to='/Dialogs' activeClassName={s.active}>Messages</NavLink>
+                <NavLink to='/dialogs' activeClassName={s.active}>Messages</NavLink>
             </div>
             <div>
-                <NavLink to='/Users' activeClassName={s.active}>Users</NavLink>
+                <NavLink to='/users' activeClassName={s.active}>Users</NavLink>
             </div>
             <div>News</div>
             <div>Music</div>

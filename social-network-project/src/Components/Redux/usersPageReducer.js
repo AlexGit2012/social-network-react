@@ -1,9 +1,10 @@
-const FOLLOW = 'MP/FOLLOW_FRIEND';
-const UNFOLLOW = 'MP/UNFOLLOW_FRIEND';
-const SET_USERS = 'MP/SET_USERS';
-const SET_CURRENT_PAGE = 'MP/SET_CURRENT_PAGE';
-const SET_TOTAL_USERS_COUNT = 'MP/SET_TOTAL_USERS_COUNT';
-const TOGGLE_IS_FETCHING = 'MP/TOGGLE_IS_FETCHING';
+export const FOLLOW = 'MP/FOLLOW_FRIEND';
+export const UNFOLLOW = 'MP/UNFOLLOW_FRIEND';
+export const SET_USERS = 'MP/SET_USERS';
+export const SET_CURRENT_PAGE = 'MP/SET_CURRENT_PAGE';
+export const SET_TOTAL_USERS_COUNT = 'MP/SET_TOTAL_USERS_COUNT';
+export const TOGGLE_IS_FETCHING = 'MP/TOGGLE_IS_FETCHING';
+export const TOGGLE_IS_FOLLOWING_UNFOLLOWING = 'MP/TOGGLE_IS_FOLLOWING_UNFOLLOWING';
 
 
 let initialState = {
@@ -11,7 +12,8 @@ let initialState = {
     pageSize: 5,
     totalUsersCount: 20,
     currentPage: 1,
-    isFetching:true
+    isFetching:true,
+    isFollowingUnfollowing:[]
 }
 
 const usersReducer = (state = initialState, action) => {
@@ -56,16 +58,24 @@ const usersReducer = (state = initialState, action) => {
                 ...state,
                 isFetching: action.isFetching
             }
+        case TOGGLE_IS_FOLLOWING_UNFOLLOWING:
+            return {
+                ...state,
+                isFollowingUnfollowing: action.isFetching
+                    ? [...state.isFollowingUnfollowing,action.userId]
+                    : state.isFollowingUnfollowing.filter(id => id != action.userId)
+            }
         default:
             return state;
     }
 }
 
-export const followActionCreator = (userID) => ({type: FOLLOW, userID});
-export const unfollowActionCreator = (userID) => ({type: UNFOLLOW, userID});
-export const setUsersAC = (users) => ({type: SET_USERS, users});
-export const setCurrentPageAC = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
-export const setTotalUsersCountAC = (totalUsersCount) => ({type: SET_TOTAL_USERS_COUNT, totalUsersCount});
-export const isFetchingAC = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+export const follow = (userID) => ({type: FOLLOW, userID});
+export const unfollow = (userID) => ({type: UNFOLLOW, userID});
+export const setUsers = (users) => ({type: SET_USERS, users});
+export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage});
+export const setTotalUsersCount = (totalUsersCount) => ({type: SET_TOTAL_USERS_COUNT, totalUsersCount});
+export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+export const toggleisFollowingUnfollowing = (isFetching, userId) => ({type: TOGGLE_IS_FOLLOWING_UNFOLLOWING, isFetching,userId})
 
 export default usersReducer;

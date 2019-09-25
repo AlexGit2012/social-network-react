@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Users.module.css';
 import userDefaultPhoto from '../../assets/images/download.png';
-import preloader from '../../assets/images/preloader.svg';
+import {NavLink} from "react-router-dom";
+import {userAPI} from "../../API/Api";
 
 
 let Users = (props) => {
@@ -15,28 +16,56 @@ let Users = (props) => {
 
     return <div>
         <div>
-            { pages.map(p => {
+            {pages.map(p => {
                 return <span className={
                     props.currentPage === p ? styles.selectedPage : undefined
                     /*this.props.currentPage === p && styles.selectedPage*/
                 }
-                             onClick={(e) => {props.onPageChanged(p);
-                                 console.log(p)}}> {p} </span>})}
+                             onClick={(e) => {
+                                 props.onPageChanged(p);
+                                 console.log(p)
+                             }}> {p} </span>
+            })}
 
         </div>
         {
             props.users.map(u => <div className={styles.user} key={u.id}>
             <span>
                 <div>
-                    <img className={styles.photo} src={u.photos.small != null ? u.photos.small : userDefaultPhoto}/>
+                    <NavLink to={'/profile/' + u.id}>
+                        <img className={styles.photo}
+                             src={u.photos.small != null ? u.photos.small : userDefaultPhoto}/>
+                    </NavLink>
                 </div>
                 <div>
                     {u.followed
-                        ? <button onClick={() => {
-                            props.unfollow(u.id)
-                        }}>Unfollow</button>
-                        : <button onClick={() => {
-                            props.follow(u.id)
+                        ? <button
+                            disabled={props.isFollowingUnfollowing.some(id=>id===u.id)}
+                            onClick={() => {
+                                props.toggleisFollowingUnfollowing(true, u.id)
+                                userAPI.unfollowUsers(u.id)
+                                    .then(data => {
+                                        if (data.resultCode === 0) {
+                                            props.unfollow(u.id)
+                                        }
+                                        props.toggleisFollowingUnfollowing(false, u.id)
+                                    });
+
+
+                            }}>Unfollow</button>
+                        : <button
+                            disabled={props.isFollowingUnfollowing.some(id=>id===u.id)}
+                            onClick={() => {
+
+                            props.toggleisFollowingUnfollowing(true, u.id)
+                            userAPI.followUsers(u.id)
+                                .then(data => {
+                                    if (data.resultCode === 0) {
+                                        props.follow(u.id)
+                                    }
+                                    props.toggleisFollowingUnfollowing(false, u.id)
+                                });
+
                         }}>Follow</button>}
                 </div>
             </span>

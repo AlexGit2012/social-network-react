@@ -1,24 +1,25 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
-import Header from './Components/Header/Header';
 import Nav from './Components/Nav/Nav';
-import ProfilePage from './Components/Profile/ProfilePage';
 import Dialogs from './Components/Dialogs/Dialogs'
 import UsersContainer from './Components/Users/UsersContainer'
 import {Route} from 'react-router-dom';
+import ProfileContainer from "./Components/Profile/ProfileContainer";
+import HeaderContainer from "./Components/Header/HeaderContainer";
 
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
-            <Header/>
+            <HeaderContainer/>
             <Nav/>
             <div className="app-wrapper-content">
-                <Route path='/Dialogs' render={() => <Dialogs />}
+                <Route path='/dialogs' render={() => <Dialogs />}
                 />
-                <Route path='/Profile' render={() => <ProfilePage />}
+                <Route path='/profile/:userID?'
+                       render={() => <ProfileContainer />}
                 />
-                <Route path='/Users' render={() => <UsersContainer />}
+                <Route path='/users' render={() => <UsersContainer />}
                 />
             </div>
         </div>
