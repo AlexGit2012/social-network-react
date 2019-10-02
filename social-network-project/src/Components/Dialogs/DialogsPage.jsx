@@ -25,7 +25,6 @@ const DialogsPage = (props) => {
     let messageElements = props.dialogsPage.messages
         .map(el => <Message message={el.message}/>);
 
-
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
@@ -47,4 +46,5 @@ const DialogsPage = (props) => {
     )
 }
 
-export default DialogsPage;
+
+export default DialogsPage

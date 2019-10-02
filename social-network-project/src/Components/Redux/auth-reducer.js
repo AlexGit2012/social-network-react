@@ -1,3 +1,5 @@
+import {userAPI} from "../../API/Api";
+
 const SET_USER_DATA = 'MP/SET_USER_DATA';
 
 let initialState = {
@@ -22,5 +24,17 @@ const authReducer = (state = initialState, action) => {
 }
 
 export const setAuthUserData = (userID,email,login) => ({type: SET_USER_DATA, data:{userID,email,login}});
+
+export const getUserDataOnProfilePage = () => {
+    return (dispatch) => {
+        userAPI.getUserProfilePageRequest()
+            .then(data => {
+                if (data.resultCode === 0) {
+                    let {id, email, login} = data.data;
+                    dispatch(setAuthUserData(id, email, login))
+                }
+            });
+    }
+}
 
 export default authReducer;
