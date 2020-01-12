@@ -1,5 +1,4 @@
 const ADD_DIALOGS_MESSAGE = 'MP/ADD-DIALOG-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'MP/UPDATE-NEW-MESSAGE-TEXT';
 
 let initialState = {
 
@@ -24,14 +23,9 @@ const dialogsReducer = (state = initialState, action) => {
         case ADD_DIALOGS_MESSAGE:
             return {
                 ...state,
-                messages:[...state.messages,{id: 4,message: state.newMessageText}],
+                messages:[...state.messages,{id: 4,message: action.newMessageText}],
                 newMessageText: ''
 
-            };
-        case UPDATE_NEW_MESSAGE_TEXT:
-            return {
-                ...state,
-                newMessageText: action.newMessage
             };
         default:
             return state;
@@ -39,7 +33,7 @@ const dialogsReducer = (state = initialState, action) => {
 
 }
 
-export const addDialogMessageActionCreator = () => ({type: ADD_DIALOGS_MESSAGE});
-export const updateNewMessageTextActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE_TEXT, newMessage: text})
+export const addDialogMessageActionCreator = (newMessageText) => ({type: ADD_DIALOGS_MESSAGE,newMessageText});
+
 
 export default dialogsReducer;

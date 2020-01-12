@@ -1,4 +1,4 @@
-import {userAPI} from "../../API/Api";
+import {authAPI} from "../../API/Api";
 
 const SET_USER_DATA = 'MP/SET_USER_DATA';
 
@@ -27,7 +27,7 @@ export const setAuthUserData = (userID,email,login) => ({type: SET_USER_DATA, da
 
 export const getUserDataOnProfilePage = () => {
     return (dispatch) => {
-        userAPI.getUserProfilePageRequest()
+        authAPI.getUserProfilePageRequest()
             .then(data => {
                 if (data.resultCode === 0) {
                     let {id, email, login} = data.data;
