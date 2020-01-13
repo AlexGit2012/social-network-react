@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- Add few hoc's and create custom hoc (withRouter, withAuthRedirect).&#10;- Wrap DialogsPage,ProfilePage, and Users by withAuthRedirect&#10;- Upgrade version of react 16.6.6-&gt;16.8.3.&#10;- Used setState with local state(Component ProfileInfo)&#10;- used compose for better understanding written code process">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/preloader.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login">
+      <change afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators/validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileStatus.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/dialogPageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/dialogPageReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +18,13 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="social-network-project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -200,7 +194,9 @@
       <workItem from="1578678191042" duration="1760000" />
       <workItem from="1578680187201" duration="4055000" />
       <workItem from="1578817793991" duration="1099000" />
-      <workItem from="1578846609690" duration="2348000" />
+      <workItem from="1578846609690" duration="4853000" />
+      <workItem from="1578927594075" duration="1695000" />
+      <workItem from="1578940898700" duration="3541000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -237,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570051501691</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login">
+      <created>1578849129529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578849129529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -291,7 +294,8 @@
     <MESSAGE value="Add preloader for users and create container component of ajax for users" />
     <MESSAGE value="Some new files was add, UI improvements, axios and ajax move to api.js" />
     <MESSAGE value="- Add few hoc's and create custom hoc (withRouter, withAuthRedirect).&#10;- Wrap DialogsPage,ProfilePage, and Users by withAuthRedirect&#10;- Upgrade version of react 16.6.6-&gt;16.8.3.&#10;- Used setState with local state(Component ProfileInfo)&#10;- used compose for better understanding written code process" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add few hoc's and create custom hoc (withRouter, withAuthRedirect).&#10;- Wrap DialogsPage,ProfilePage, and Users by withAuthRedirect&#10;- Upgrade version of react 16.6.6-&gt;16.8.3.&#10;- Used setState with local state(Component ProfileInfo)&#10;- used compose for better understanding written code process" />
+    <MESSAGE value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
   </component>
   <component name="masterDetails">
     <states>
