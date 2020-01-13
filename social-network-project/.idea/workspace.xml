@@ -188,7 +188,7 @@
       <workItem from="1578817793991" duration="1099000" />
       <workItem from="1578846609690" duration="4853000" />
       <workItem from="1578927594075" duration="1695000" />
-      <workItem from="1578940898700" duration="3909000" />
+      <workItem from="1578940898700" duration="4181000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -239,23 +239,31 @@
       <option name="project" value="LOCAL" />
       <updated>1578946223628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
+      <created>1578946483628</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578946483629</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/node_modules/telejson/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
       </list>
     </option>
   </component>
