@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login">
-      <change afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validators/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,7 +188,7 @@
       <workItem from="1578817793991" duration="1099000" />
       <workItem from="1578846609690" duration="4853000" />
       <workItem from="1578927594075" duration="1695000" />
-      <workItem from="1578940898700" duration="3541000" />
+      <workItem from="1578940898700" duration="3909000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -240,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578849129529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
+      <created>1578946223628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578946223628</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -295,7 +294,8 @@
     <MESSAGE value="Some new files was add, UI improvements, axios and ajax move to api.js" />
     <MESSAGE value="- Add few hoc's and create custom hoc (withRouter, withAuthRedirect).&#10;- Wrap DialogsPage,ProfilePage, and Users by withAuthRedirect&#10;- Upgrade version of react 16.6.6-&gt;16.8.3.&#10;- Used setState with local state(Component ProfileInfo)&#10;- used compose for better understanding written code process" />
     <MESSAGE value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
+    <MESSAGE value="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
   </component>
   <component name="masterDetails">
     <states>
