@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfilePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Redux/app-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +49,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="be19f766-16d2-4220-9ca9-414bb92f32e3" />
-  </component>
   <component name="ProjectId" id="1SteV9SlGqMEA8SnKudtb7v9nP8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,19 +71,19 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
+      <recent name="D:\React\reactMyApp\my-app\src\Components\Users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\React\social-network-react\social-network-project\node_modules" />
       <recent name="D:\React\reactMyApp\my-app\src" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Profile" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Nav" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Content" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
-      <recent name="D:\React\reactMyApp\my-app\src\Components\Users" />
-      <recent name="D:\React\reactMyApp\my-app\src\Components\Redux" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +99,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\AlexDesktop\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -191,7 +202,18 @@
       <workItem from="1578817793991" duration="1099000" />
       <workItem from="1578846609690" duration="4853000" />
       <workItem from="1578927594075" duration="1695000" />
-      <workItem from="1578940898700" duration="4181000" />
+      <workItem from="1578940898700" duration="4473000" />
+      <workItem from="1579089481230" duration="705000" />
+      <workItem from="1579090623193" duration="1253000" />
+      <workItem from="1579273919493" duration="600000" />
+      <workItem from="1579336370435" duration="6324000" />
+      <workItem from="1579513190084" duration="677000" />
+      <workItem from="1579527969048" duration="7856000" />
+      <workItem from="1579549085844" duration="599000" />
+      <workItem from="1579591744514" duration="3962000" />
+      <workItem from="1579603939347" duration="2090000" />
+      <workItem from="1579677021263" duration="955000" />
+      <workItem from="1579678438762" duration="3768000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -249,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578946483629</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
+      <created>1578946685627</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578946685627</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
+      <created>1578946775508</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578946775508</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

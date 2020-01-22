@@ -56,11 +56,20 @@ export const profileAPI = {
 
 
 export const authAPI = {
-    getUserProfilePageRequest () {
+    getUserProfilePageRequest() {
         return instance
             .get(`auth/me`, {})
             .then(response => {
-                return response.data
+                return response
             });
+    },
+
+    login(email, password, rememberMe = false) {
+        return instance
+            .post(`auth/login`, {email, password, rememberMe})
+    },
+    logout() {
+        return instance
+            .delete(`auth/login`)
     }
 }

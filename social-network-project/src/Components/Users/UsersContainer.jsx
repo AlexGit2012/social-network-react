@@ -69,4 +69,4 @@ const UsersContainer = connect(mapStateToProps,
     }
     )(UsersContainerAPI)
 
-export default compose(withAuthRedirect)(UsersContainer);
+export default UsersContainer;
