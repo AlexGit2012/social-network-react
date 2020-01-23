@@ -6,6 +6,7 @@ import {login} from "../Redux/auth-reducer";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 import style from "../Common/FormControls.module.css";
+import getIsAuthValue from "../Redux/users-selectors"
 
 const Input = Element("input")
 
@@ -17,15 +18,13 @@ const Login = (props) => {
     }
 
     if (props.isAuth) {
-        return <Redirect to={`/profile`} />
-    }
+        return <Redirect to={`/profile`}/>
+    } else
 
-    else
-
-    return <div>
-        <h1>Login</h1>
-        <LoginReduxForm onSubmit={onSubmit}/>
-    </div>
+        return <div>
+            <h1>Login</h1>
+            <LoginReduxForm onSubmit={onSubmit}/>
+        </div>
 
 }
 
@@ -54,7 +53,7 @@ const LoginForm = (props) => {
         <div>
             <button>Login</button>
         </div>
-        { props.error && <div className={style.formSummaryError} >
+        {props.error && <div className={style.formSummaryError}>
             {props.error}
         </div>}
     </form>
@@ -63,7 +62,8 @@ const LoginForm = (props) => {
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 
 const mapStateToProps = (state) => ({
-    isAuth: state.authPage.isAuth
+    /*    isAuth: state.authPage.isAuth*/
+    isAuth: getIsAuthValue(state)
 })
 
 export default connect(mapStateToProps, {login})(Login);

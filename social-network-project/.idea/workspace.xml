@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs">
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfilePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Redux/app-reducer.js" afterDir="false" />
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- initialized app(create app-reducer, and new thunk)&#10;- app -&gt; class component">
+      <change afterPath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/FormControls.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../portfolio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -214,6 +203,9 @@
       <workItem from="1579603939347" duration="2090000" />
       <workItem from="1579677021263" duration="955000" />
       <workItem from="1579678438762" duration="3768000" />
+      <workItem from="1579802420424" duration="752000" />
+      <workItem from="1579812665826" duration="38000" />
+      <workItem from="1579812748075" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
