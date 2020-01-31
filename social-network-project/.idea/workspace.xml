@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- initialized app(create app-reducer, and new thunk)&#10;- app -&gt; class component">
-      <change afterPath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" afterDir="false" />
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- creaate first selector in Login page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ignat's lessons/projectLesson2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,6 +92,23 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\AlexDesktop\AppData\Roaming\Subversion</configuration>
@@ -205,7 +228,10 @@
       <workItem from="1579678438762" duration="3768000" />
       <workItem from="1579802420424" duration="752000" />
       <workItem from="1579812665826" duration="38000" />
-      <workItem from="1579812748075" duration="255000" />
+      <workItem from="1579812748075" duration="580000" />
+      <workItem from="1579873531513" duration="599000" />
+      <workItem from="1579878072933" duration="38000" />
+      <workItem from="1580497457959" duration="2438000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -277,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578946775508</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- creaate first selector in Login page">
+      <created>1579813199701</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579813199701</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +367,8 @@
     <MESSAGE value="- Add few hoc's and create custom hoc (withRouter, withAuthRedirect).&#10;- Wrap DialogsPage,ProfilePage, and Users by withAuthRedirect&#10;- Upgrade version of react 16.6.6-&gt;16.8.3.&#10;- Used setState with local state(Component ProfileInfo)&#10;- used compose for better understanding written code process" />
     <MESSAGE value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
     <MESSAGE value="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
+    <MESSAGE value="- creaate first selector in Login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="- creaate first selector in Login page" />
   </component>
   <component name="masterDetails">
     <states>

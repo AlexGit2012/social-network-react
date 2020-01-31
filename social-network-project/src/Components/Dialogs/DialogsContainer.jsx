@@ -4,11 +4,12 @@ import DialogsPage from './DialogsPage';
 import {connect} from "react-redux";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../HOC/withAuthRedirect";
+import {getDialogsPageValue} from "../Redux/users-selectors";
 
 
 const mapStateToProps = (state) => {
     return {
-        dialogsPage: state.dialogsPage,
+        dialogsPage: getDialogsPageValue(state)
     }
 }
 
