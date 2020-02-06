@@ -16,7 +16,7 @@ import {
     getUsersPagePageSize,
     getUsersPageTotalUsersCount,
     getUsersPageUsers
-} from "../Redux/users-selectors";
+} from "../Redux/selectors";
 
 
 class UsersContainerAPI extends React.Component {

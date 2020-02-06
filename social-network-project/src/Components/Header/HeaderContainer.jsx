@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./Header";
 import {connect} from "react-redux";
 import {getUserDataOnProfilePage, logout, setAuthUserData} from "../Redux/auth-reducer";
-import {getIsAuthValue, getLoginStatus} from "../Redux/users-selectors";
+import {getIsAuthValue, getLoginStatus} from "../Redux/selectors";
 
 class HeaderContainer extends React.Component {
 

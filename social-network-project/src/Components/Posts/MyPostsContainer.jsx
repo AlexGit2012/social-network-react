@@ -2,7 +2,7 @@ import React from 'react';
 import {addPostActionCreator} from "../Redux/profilePageReducer";
 import MyPosts from "./MyPosts";
 import {connect} from "react-redux";
-import {getNewPostText, getPostAva, getPosts, getTitleMyPosts} from "../Redux/users-selectors";
+import {getNewPostText, getPostAva, getPosts, getTitleMyPosts} from "../Redux/selectors";
 
 let mapStateToProps = (state) =>{
     return {

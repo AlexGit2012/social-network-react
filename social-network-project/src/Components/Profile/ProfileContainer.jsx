@@ -11,7 +11,7 @@ import {
     getProfile,
     getProfilePage,
     getProfilePageStatus
-} from "../Redux/users-selectors";
+} from "../Redux/selectors";
 
 class ProfileContainer extends React.Component {
 

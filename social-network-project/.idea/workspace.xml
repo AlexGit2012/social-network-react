@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- creaate first selector in Login page">
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- add selectors to all container components">
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileStatusWithHooks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +29,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>component</find>
-      <find>state</find>
-      <find>renderPage</find>
-      <find>this._state</find>
-      <find>this._state.dialogsPage</find>
-      <find>profi</find>
-      <find>babel</find>
-      <find>this.CliEngine</find>
-      <find>basicPath</find>
-      <find>lib/cli-engine</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -53,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ignat's lessons/projectLesson2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Profile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,19 +54,19 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\React\social-network-react\social-network-project\src\Components\Redux" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
-      <recent name="D:\React\reactMyApp\my-app\src\Components\Users" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\React\social-network-react\social-network-project\node_modules" />
       <recent name="D:\React\reactMyApp\my-app\src" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Profile" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Nav" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Content" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\React\social-network-react\social-network-project\src\Components\Profile" />
+      <recent name="C:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,7 +219,9 @@
       <workItem from="1579812748075" duration="580000" />
       <workItem from="1579873531513" duration="599000" />
       <workItem from="1579878072933" duration="38000" />
-      <workItem from="1580497457959" duration="2438000" />
+      <workItem from="1580497457959" duration="3263000" />
+      <workItem from="1580748022375" duration="144000" />
+      <workItem from="1581097152211" duration="3468000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -310,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579813199701</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- add selectors to all container components">
+      <created>1580500782961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580500782961</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +365,8 @@
     <MESSAGE value="- Add redux-form and use it in secions: Profile(Myposts), Dialogs, Login" />
     <MESSAGE value="- add new validation for fields (empty fields, max. length)&#10;- fields validate at login, myPosts, dialogs" />
     <MESSAGE value="- creaate first selector in Login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="- creaate first selector in Login page" />
+    <MESSAGE value="- add selectors to all container components" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add selectors to all container components" />
   </component>
   <component name="masterDetails">
     <states>
