@@ -7,7 +7,7 @@ import {Element} from '../Common/FormControls';
 const maxLength20 = maxLengthCreator(20);
 const Textarea = Element("textarea");
 
-const MyPosts = (props) => {
+const MyPosts = React.memo(props => {
 
 
     const onSubmit = (formData) => {
@@ -23,7 +23,7 @@ const MyPosts = (props) => {
         <MyPropsFormRedux postElements={postElements} onSubmit={onSubmit} />
 
     )
-}
+})
 
 const MyPostsForm = (props) => {
 

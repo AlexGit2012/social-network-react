@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- create new ProfileStatus component with hook useState">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileStatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileStatusWithHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,6 +214,8 @@
       <workItem from="1580497457959" duration="3263000" />
       <workItem from="1580748022375" duration="144000" />
       <workItem from="1581097152211" duration="5308000" />
+      <workItem from="1582219402752" duration="2083000" />
+      <workItem from="1582267259794" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
