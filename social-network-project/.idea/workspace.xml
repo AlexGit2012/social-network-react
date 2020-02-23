@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- create new ProfileStatus component with hook useState">
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- use React.memo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Posts/MyPosts.jsx" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +26,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../portfolio/my_portfolio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,7 +47,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -60,18 +64,6 @@
       <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
       <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -215,7 +207,13 @@
       <workItem from="1580748022375" duration="144000" />
       <workItem from="1581097152211" duration="5308000" />
       <workItem from="1582219402752" duration="2083000" />
-      <workItem from="1582267259794" duration="674000" />
+      <workItem from="1582267259794" duration="1376000" />
+      <workItem from="1582308402822" duration="574000" />
+      <workItem from="1582384384084" duration="270000" />
+      <workItem from="1582487385962" duration="239000" />
+      <workItem from="1582491360041" duration="228000" />
+      <workItem from="1582491609345" duration="22000" />
+      <workItem from="1582491696503" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -308,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581014716262</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- use React.memo">
+      <created>1582268147120</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582268147120</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +373,34 @@
     <MESSAGE value="- creaate first selector in Login page" />
     <MESSAGE value="- add selectors to all container components" />
     <MESSAGE value="- create new ProfileStatus component with hook useState" />
-    <option name="LAST_COMMIT_MESSAGE" value="- create new ProfileStatus component with hook useState" />
+    <MESSAGE value="- use React.memo" />
+    <option name="LAST_COMMIT_MESSAGE" value="- use React.memo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1582491629805">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1440.856@0.0.1440.856" timestamp="1582491629805" />
+    <state width="1419" height="218" key="GridCell.Tab.0.bottom" timestamp="1582491471037">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state width="1419" height="218" key="GridCell.Tab.0.bottom/0.0.1440.856@0.0.1440.856" timestamp="1582491471037" />
+    <state width="1419" height="218" key="GridCell.Tab.0.center" timestamp="1582491471036">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state width="1419" height="218" key="GridCell.Tab.0.center/0.0.1440.856@0.0.1440.856" timestamp="1582491471036" />
+    <state width="1419" height="218" key="GridCell.Tab.0.left" timestamp="1582491471035">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state width="1419" height="218" key="GridCell.Tab.0.left/0.0.1440.856@0.0.1440.856" timestamp="1582491471035" />
+    <state width="1419" height="218" key="GridCell.Tab.0.right" timestamp="1582491471037">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state width="1419" height="218" key="GridCell.Tab.0.right/0.0.1440.856@0.0.1440.856" timestamp="1582491471037" />
+    <state x="249" y="64" key="SettingsEditor" timestamp="1582491719946">
+      <screen x="0" y="0" width="1440" height="856" />
+    </state>
+    <state x="249" y="64" key="SettingsEditor/0.0.1440.856@0.0.1440.856" timestamp="1582491719946" />
   </component>
   <component name="masterDetails">
     <states>
