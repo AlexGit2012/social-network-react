@@ -28,17 +28,15 @@ export const setAuthUserData = (userID, email, login, isAuth) => ({
     payload: {userID, email, login, isAuth}
 });
 
-export const getUserDataOnProfilePage = () => {  ///getAuthUserData - old naming
-    return (dispatch) => {
-        return (authAPI.getUserProfilePageRequest()
-            .then(response => {
+export const getUserDataOnProfilePage = () =>  ///getAuthUserData - old naming
+    async (dispatch) => {
+        let response = await authAPI.getUserProfilePageRequest()
                 if (response.data.resultCode === 0) {
                     let {id, email, login} = response.data.data;
                     dispatch(setAuthUserData(id, email, login, true))
                 }
-            }))
     }
-}
+
 
 export const login = (email, password, rememberMe) => {
     return (dispatch) => {
