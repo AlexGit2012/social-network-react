@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- create test for profileReducer">
+    <list default="true" id="5805a343-1de2-4a7f-8980-fde2e2222494" name="Default" comment="- starting use async-await instead promise (auth-reducer)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/profilePageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Redux/usersPageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Redux/usersPageReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +54,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\React\social-network-react\social-network-project\src\Components\Redux" />
-      <recent name="C:\React\social-network-react\social-network-project\src\Components\Profile" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
-      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\React\social-network-react\social-network-project\node_modules" />
       <recent name="D:\React\reactMyApp\my-app\src" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Profile" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Nav" />
       <recent name="D:\React\reactMyApp\my-app\src\Components\Content" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="C:\React\social-network-react\social-network-project\src\Components\Profile" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Header" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Redux" />
+      <recent name="D:\React\social-network-react\social-network-project\src\Components\Users" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,7 +219,13 @@
       <workItem from="1582491609345" duration="22000" />
       <workItem from="1582491696503" duration="222000" />
       <workItem from="1582491938865" duration="5000" />
-      <workItem from="1582526338376" duration="4651000" />
+      <workItem from="1582526338376" duration="9910000" />
+      <workItem from="1582563661960" duration="87000" />
+      <workItem from="1583065328376" duration="1199000" />
+      <workItem from="1581876386257" duration="436000" />
+      <workItem from="1586186741727" duration="121000" />
+      <workItem from="1586187554318" duration="112000" />
+      <workItem from="1588533033551" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor issues">
       <created>1568385104101</created>
@@ -331,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582529191354</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="- starting use async-await instead promise (auth-reducer)">
+      <created>1582531936530</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582531936530</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,33 +409,34 @@
     <MESSAGE value="- use React.memo" />
     <MESSAGE value="- test commit (3.2--&gt;3.3)" />
     <MESSAGE value="- create test for profileReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="- create test for profileReducer" />
+    <MESSAGE value="- starting use async-await instead promise (auth-reducer)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- starting use async-await instead promise (auth-reducer)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1582529190673">
+    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1582531935976">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
-    <state x="294" y="0" key="CommitChangelistDialog2/0.0.1440.856@0.0.1440.856" timestamp="1582529190673" />
+    <state x="294" y="0" key="CommitChangelistDialog2/0.0.1440.856@0.0.1440.856" timestamp="1582531935976" />
     <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1582491629805">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
     <state x="504" y="187" key="FileChooserDialogImpl/0.0.1440.856@0.0.1440.856" timestamp="1582491629805" />
-    <state width="1419" height="218" key="GridCell.Tab.0.bottom" timestamp="1582491471037">
+    <state width="1414" height="205" key="GridCell.Tab.0.bottom" timestamp="1586187666331">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
-    <state width="1419" height="218" key="GridCell.Tab.0.bottom/0.0.1440.856@0.0.1440.856" timestamp="1582491471037" />
-    <state width="1419" height="218" key="GridCell.Tab.0.center" timestamp="1582491471036">
+    <state width="1414" height="205" key="GridCell.Tab.0.bottom/0.0.1440.856@0.0.1440.856" timestamp="1586187666331" />
+    <state width="1414" height="205" key="GridCell.Tab.0.center" timestamp="1586187666331">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
-    <state width="1419" height="218" key="GridCell.Tab.0.center/0.0.1440.856@0.0.1440.856" timestamp="1582491471036" />
-    <state width="1419" height="218" key="GridCell.Tab.0.left" timestamp="1582491471035">
+    <state width="1414" height="205" key="GridCell.Tab.0.center/0.0.1440.856@0.0.1440.856" timestamp="1586187666331" />
+    <state width="1414" height="205" key="GridCell.Tab.0.left" timestamp="1586187666331">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
-    <state width="1419" height="218" key="GridCell.Tab.0.left/0.0.1440.856@0.0.1440.856" timestamp="1582491471035" />
-    <state width="1419" height="218" key="GridCell.Tab.0.right" timestamp="1582491471037">
+    <state width="1414" height="205" key="GridCell.Tab.0.left/0.0.1440.856@0.0.1440.856" timestamp="1586187666331" />
+    <state width="1414" height="205" key="GridCell.Tab.0.right" timestamp="1586187666331">
       <screen x="0" y="0" width="1440" height="856" />
     </state>
-    <state width="1419" height="218" key="GridCell.Tab.0.right/0.0.1440.856@0.0.1440.856" timestamp="1582491471037" />
+    <state width="1414" height="205" key="GridCell.Tab.0.right/0.0.1440.856@0.0.1440.856" timestamp="1586187666331" />
     <state x="249" y="64" key="SettingsEditor" timestamp="1582491719946">
       <screen x="0" y="0" width="1440" height="856" />
     </state>

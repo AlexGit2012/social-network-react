@@ -37,30 +37,22 @@ export const getUserDataOnProfilePage = () =>  ///getAuthUserData - old naming
                 }
     }
 
-
-export const login = (email, password, rememberMe) => {
-    return (dispatch) => {
-        authAPI.login(email, password, rememberMe)
-            .then(response => {
+export const login = (email, password, rememberMe) => async (dispatch) => {
+        let response =  await authAPI.login(email, password, rememberMe)
                 if (response.data.resultCode === 0) {
                     dispatch(getUserDataOnProfilePage())
                 } else {
                     let message = response.data.messages ? response.data.messages[0] : "Some error"
                     dispatch(stopSubmit("login", {_error: message}))
                 }
-            });
-    }
 }
 
-export const logout = () => {
-    return (dispatch) => {
-        authAPI.logout()
-            .then(data => {
+export const logout = () => async (dispatch) => {
+        let data = authAPI.logout()
                 if (data.resultCode === 0) {
                     dispatch(setAuthUserData(null, null, null, false))
                 }
-            })
     }
-}
+
 
 export default authReducer;
