@@ -19,8 +19,8 @@ let reducers = combineReducers({
     }
 );
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers((applyMiddleware(thunkMiddleware))));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // Redux devtools integrations
+const store = createStore(reducers, composeEnhancers((applyMiddleware(thunkMiddleware)))); // Redux devtools integrations
 
 window.store = store
 
